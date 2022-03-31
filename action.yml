@@ -1,0 +1,8 @@
+name: "Yamllint PR Annotator"
+description: "Annotate pull requests with yamllint errors detected during CI"
+author: "Joe Young"
+runs:
+  using: "composite"
+  steps:
+    - run: echo "::add-matcher::${{ github.action_path }}/problem-matcher.json"
+      shell: bash
