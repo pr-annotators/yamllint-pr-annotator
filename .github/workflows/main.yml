@@ -1,0 +1,23 @@
+name: My Workflow
+on: [push, pull_request]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@master
+
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.8"
+        
+      - name: Install yamllint
+        run: |
+          pip install yamllint
+
+      - name: Add yamllint annotator
+        uses: pr-annotators/yamllint-pr-annotator@v0.0.1
+
+      - name: Run yamllint
+        run: |
+          yamllint -f parsable demos/

@@ -1,0 +1,8 @@
+name: "some name"
+description: "dkfhdskfhsdkjfdsl;fjdslkfjdslkfjdslkfdsfdfkjhdsfkjsdhfkjsdjfkjdsfldsjfldskjfldsjfldskjfdlskjflkdjflkj"
+args:
+  - "hello"
+  - "world"
+args:
+    - "hello"
+    - "world"
