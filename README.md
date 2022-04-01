@@ -1,5 +1,7 @@
 # Yamllint PR Annotator
 
+![demo](images/demo.png)
+
 ## Usage
 
 Annotate pull requests with yamllint errors detected during CI.
