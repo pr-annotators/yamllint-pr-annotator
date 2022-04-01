@@ -29,7 +29,7 @@ jobs:
           pip install yamllint
 
       - name: Add yamllint annotator
-        uses: jpy-git/yamllint-pr-annotator@master
+        uses: pr-annotators/yamllint-pr-annotator@v1.0.0
 
       - name: Run yamllint
         run: |
